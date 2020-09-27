@@ -1,5 +1,8 @@
 # Deploy a high-availability web app using CloudFormation
 
+## To access the Load Balancer for output values, please click the link below
+[http://WebAppLB-1774696290.us-west-2.elb.amazonaws.com](http://WebAppLB-1774696290.us-west-2.elb.amazonaws.com)
+
 ## Create an architectural diagram on LucidChart
 ### Needs:
 
@@ -18,7 +21,7 @@
 - [x] Load balancer should allow all public traffic `(0.0.0/0)` on `port 80` inbound (`default HTTP port`). Outbound will only use `port 80`
 - [x] App needs to be deployed into private subnets with a Load Balancer located in a public subnet
 - [x] One of the output exports of the **CloudFormation** script should be the public URL of the **LoadBalancer**
-- [x] **Bonus**: add `http://` in front of the load balancer **DNS Name** in the output, for convenience
+- [x] **Bonus**: add `http://` in front of the load balancer **DNS Name** in the output, for convenience.
 
 ## Project Rubric
 
@@ -26,6 +29,7 @@
 - [x] Parameters: The more the better, but an exaggerated number of params can be messy (say, 10 or more). 1 or 0 is definitely lacking.
 - [x] Resources: This is a mandatory section of the script. It's required to have a LoadBalancer, Launch Configuration, AutoScaling Group, a health check, security groups, a Listener, and a Target Group.
 - [x] Outputs: This is optional, but it would be nice to have a URL here with the Load Balancer, DNS Name, and "http" in front of it.
+
 - [x] Working Test: If the student provides a URL to verify his work is running properly, it will be a page that says "it works! Udagram, Udacity"
 
 ### Load Balancer
