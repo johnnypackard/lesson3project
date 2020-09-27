@@ -249,7 +249,7 @@ Resources:
   WebAppLB:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer
     Properties:
-      IpAddressType: IPv4
+      IpAddressType: ipv4
       Name: WebAppLB
       Scheme: internet-facing
       Subnets:
@@ -265,8 +265,10 @@ Resources:
     Properties:
       DefaultActions:
         - Type: forward
-          TargetGroupArn: !Ref: WebAppTargetGroup
-      LoadBalancerArn: !Ref: WebAppLB
+          TargetGroupArn: 
+            Ref: WebAppTargetGroup
+      LoadBalancerArn: 
+        Ref: WebAppLB
       Port: '80'
       Protocol: HTTP
   ALBListenerRule:
