@@ -1,7 +1,7 @@
 # Deploy a high-availability web app using CloudFormation
 
 ## To access the Load Balancer for output values, please click the link below
-<a href="http://WebAppLB-1774696290.us-west-2.elb.amazonaws.com" target="_blank">http://WebAppLB-1774696290.us-west-2.elb.amazonaws.com</a>
+[http://WebAppLB-1774696290.us-west-2.elb.amazonaws.com](http://WebAppLB-1774696290.us-west-2.elb.amazonaws.com)
 
 ## Create an architectural diagram on LucidChart
 ### Needs:
